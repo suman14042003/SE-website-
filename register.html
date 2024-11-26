@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Coursera Clone</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="online-degrees.html">Online Degrees</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="login.html" class="btn">Log In</a></li>
+            <li><a href="register.html" class="btn btn-primary">Join for Free</a></li>
+        </ul>
+    </nav>
+
+    <!-- Registration Form -->
+    <section class="register-section">
+        <h1>Create Your Account</h1>
+        <form class="register-form" action="register.php" method="POST"> <!-- Updated action -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Coursera Clone. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+

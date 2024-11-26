@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Coursera Clone</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="online-degrees.html">Online Degrees</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="login.html" class="btn">Log In</a></li>
+            <li><a href="register.html" class="btn btn-primary" id="signupBtn">Join for Free</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <form class="search-bar" action="search.html" method="GET">
+            <input type="text" placeholder="Search for courses..." name="query" required>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Learn Without Limits</h1>
+            <p>Start, switch, or advance your career with courses, certificates, and degrees.</p>
+            <div class="hero-buttons">
+                <a href="courses.html" class="btn btn-enroll">Enroll Now</a>
+                <a href="#" class="btn btn-get-started" id="signupBtnMain">Get Started</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/student.png" alt="Student Learning">
+        </div>
+    </header>
+ <!-- Registration Modal -->
+ <div id="registrationModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Create Your Account</h2>
+        <form class="register-form" action="register.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Learn with Us?</h2>
+        <div class="features-container">
+            <div class="feature-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>World-Class Learning</h3>
+                <p>Top universities and industry leaders offer their best resources.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Expert Instructors</h3>
+                <p>Learn from renowned professors and mentors.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-globe"></i>
+                <h3>Global Access</h3>
+                <p>Study from anywhere, anytime, at your own pace.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Coursera Clone. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
